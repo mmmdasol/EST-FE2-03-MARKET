@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      header {
+        height: 90px;
+        background-color: yellow;
+        position: relative;
+        display: flex;
+        box-shadow: 0px 4px 5px 0px #0000001A;
+      }
+
+      .top-logo {
+        height: 38px;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        margin: auto;
+      }
+
+      .search-container {
+        position: relative;
+        width: 400px;
+        height: 46px;
+        display: flex;
+      }
+
+      .search-txt {
+        border-radius: 50px;
+        width: 400px;
+        border: 1px solid #21bf48;
+        padding: 13px 22px;
+        font-size: 1em;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        -o-appearance: none;
+        appearance: none;
+      }
+
+      .search-btn {
+        position: absolute;
+        background-image: url("assets/search.png");
+        top: 9px;
+        bottom: 9px;
+        right: 22px;
+        width: 28px;
+        height: 28px;
+        border: none;
+      }
+
+      main {
+        height: 500px;
+      }
+
+      .event-banner { 
+        height: 100%;
+        background-color: #F2F2F2;
+      }
+
+      .product-list {
+        margin-top: 80px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1 class="top-logo">
+        <a href="index.html"
+          ><img src="assets/Logo-hodu.png" alt="호두마켓"
+        /></a>
+      </h1>
+      <div class="search-container">
+        <input
+          class="search-txt"
+          type="text"
+          placeholder="상품을 검색해보세요!"
+        />
+        <button class="search-btn" type="submit" alt="검색"></button>
+      </div>
+
+      <nav>
+        <ul class="navigation">
+          <li>
+            <a href="#">장바구니<img src="" /></a>
+          </li>
+          <li>
+            <a href="#">로그인<img src="" /></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+        <section class="event-banner">
+            <img src="" alt="">
+        </section>
+
+        <section class="product-list">
+            <div class="product-container">
+                <ul>
+                    <li><a href="#">Hack Your Life 개발자 노트북 파우치</a></li>
+                    <li><a href="#">네 개발잡니다 개발자키링 금속키링</a></li>
+                    <li><a href="#">딥러닝 개발자 무릎 담요</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">우당탕탕 라이캣의 실험실 스티커 팩</a></li>
+                    <li><a href="#">버그를 Java라 버그잡는 개리씨 키링 개발자키링...</a></li>
+                </ul>
+            </div>
+            <table></table>
+        </section>
+    </main>
+
+  </body>
+</html>
