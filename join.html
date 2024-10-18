@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+      }
+
+      .blind {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        clip: rect(0 0 0 0);
+        overflow: hidden;
+      }
+
+      .join-input-text {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        margin: 0;
+        width: 480px;
+        height: 60px;
+        border-radius: 5px;
+      }
+
+      header {
+      }
+
+      .logo {
+        width: 238px;
+        height: 74px;
+        top: 180px;
+        left: 841px;
+      }
+
+      .join-input {
+        width: 480px;
+        padding: 20px 0px 0px 0px;
+      }
+
+      .phonenumber {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        margin: 0;
+        width: 152px;
+        height: 54px;
+        border-radius: 5px;
+      }
+
+      input.agree {
+        width: 16px;
+        height: 16px;
+      }
+
+      .join-btn {
+        width: 480px;
+        height: 60px;
+        margin-top: 36px;
+        border: none;
+        border-radius: 5px;
+        background: #21bf48;
+        color: #fff;
+        font-size: 18px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1 class="blind">HODU</h1>
+      <a href="#" class="logo"><img src="assets/Logo-hodu.png" alt="" /></a>
+    </header>
+    <main>
+      <div class="join-container">
+        <div class="content">
+          <ul class="user-tab">
+            <li class="user-buyer">
+              <a href="#"><span class="user-text">구매회원가입</span></a>
+            </li>
+            <li class="user-seller">
+              <a href="#"><span class="user-text">판매회원가입</span></a>
+            </li>
+          </ul>
+          <div class="join-input">
+            <div class="">아이디</div>
+            <input type="text" class="join-input-text" />
+            <button>중복확인</button>
+            <div class="">비밀번호</div>
+            <input type="text" class="join-input-text" />
+            <div class="">비밀번호 재확인</div>
+            <input type="text" class="join-input-text" />
+            <div class="">이름</div>
+            <input type="text" class="join-input-text" />
+            <div class="">휴대폰번호</div>
+            <div class="">
+              <div class="selectbox">
+                <select name="휴대폰번호 앞자리" class="phonenumber" ></select>
+                <input type="tel" class="phonenumber" />
+                <input type="tel" class="phonenumber" />
+              </div>
+            </div>
+          </div>
+          <div>
+            <input type="checkbox" class="agree"/>
+            <span
+              >호두샵의 <u><b>이용약관</b></u> 및 <u><b>개인정보처리방침</b></u
+              >에 대한 내용을 확인하였고 동의합니다.</span
+            >
+          </div>
+          <button class="join-btn">가입하기</button>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
+
