@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+      }
+
+      .blind {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        clip: rect(0 0 0 0);
+        overflow: hidden;
+      }
+
+      input {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        margin: 0;
+        width: 480px;
+        height: 60px;
+      }
+
+      header {
+      }
+
+      .logo {
+        width: 238px;
+        height: 74px;
+        top: 180px;
+        left: 841px;
+      }
+
+      .login-input {
+        padding: 20px 0px 0px 0px;
+        border-bottom: solid 1px #c4c4c4;
+      }
+
+      input::placeholder {
+        color: ;
+        font-size: ;
+      }
+
+      .login-btn {
+        width: 480px;
+        height: 60px;
+        margin-top: 36px;
+        border: none;
+        border-radius: 5px;
+        background: #21BF48;
+        color: #fff;
+        font-size: 18px;
+      }
+
+      .find-pw::before {
+        content: "|";
+        padding: 0px 14px 0px 14px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1 class="blind">HODU</h1>
+      <a href="#" class="logo"><img src="assets/Logo-hodu.png" alt="" /></a>
+    </header>
+    <main>
+      <div class="login-container">
+        <div class="content">
+          <ul class="user-tab">
+            <li class="user-buyer">
+              <a href="#"><span class="user-text">구매회원 로그인</span></a>
+            </li>
+            <li class="user-seller">
+              <a href="#"><span class="user-text">판매회원 로그인</span></a>
+            </li>
+          </ul>
+          <div class="login-input">
+            <input type="text" placeholder="아이디" />
+          </div>
+          <div class="login-input">
+            <input type="text" placeholder="비밀번호" />
+          </div>
+          <button class="login-btn">로그인</button>
+        </div>
+        <div class="bottom-wrap">
+          <ul class="">
+            <li class="join"><a href="#"><span class="">회원가입</span></li>
+            <li class="find-pw"><a href="#"><span class="">비밀번호 찾기</span></li>
+          </ul>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
